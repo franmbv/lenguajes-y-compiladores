@@ -45,7 +45,7 @@ double *generarPascal(unsigned long n) {
         return NULL;
     }
 
-    // Memoria dinámica solicitada en el documento
+    // Memoria dinámica 
     coeficientes = malloc(cantidad * sizeof(*coeficientes));
     if (coeficientes == NULL) {
         return NULL;
@@ -104,7 +104,7 @@ double evaluarPolinomio(const double *coeficientes, unsigned long n, double x) {
         if (exponente == 0) {
             printf("Termino constante: %.0f", termino);
         } else {
-            // Ajustado a %.3f para mostrar 3 decimales
+         
             printf("%.0f(%.3f)^%lld = %.3f",
                    coeficientes[n - (unsigned long)exponente],
                    x,
@@ -143,7 +143,6 @@ int main(void) {
     double *coeficientes;
     double tiempoPromedio;
 
-    // Separador visual para ignorar la ruta de la terminal
     printf("\n=================================================\n");
     printf("Calculo del polinomio (x + 1)^n\n");
     printf("=================================================\n");
@@ -176,7 +175,6 @@ int main(void) {
     
     printf("\nRendimiento C (generacion de n=100, promedio de 100000 ejecuciones): %.6f ms\n", tiempoPromedio);
     
-    // Salto de línea final solicitado
     printf("\n");
     return EXIT_SUCCESS;
 }

@@ -9,6 +9,7 @@ int main(void) {
         while (numero < 0) {
             numero++;
         }
+        printf("El numero es ahora positivo\n");
     }
     return 0;
 }
