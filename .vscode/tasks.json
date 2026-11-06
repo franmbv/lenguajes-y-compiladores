@@ -6,6 +6,10 @@
             "command": "C:\\mingw64\\bin\\gcc.exe",
             "args": [
                 "-fdiagnostics-color=always",
+                "-std=c17",
+                "-Wall",
+                "-Wextra",
+                "-pedantic",
                 "-g",
                 "${file}",
                 "-o",
@@ -22,6 +26,23 @@
                 "isDefault": true
             },
             "detail": "Tarea generada por el depurador."
+        },
+        {
+            "label": "C: ejecutar archivo activo (sin depuración)",
+            "type": "process",
+            "command": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "dependsOn": "C: gcc.exe compilar archivo activo",
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "dedicated",
+                "clear": false
+            },
+            "problemMatcher": []
         }
     ],
     "version": "2.0.0"

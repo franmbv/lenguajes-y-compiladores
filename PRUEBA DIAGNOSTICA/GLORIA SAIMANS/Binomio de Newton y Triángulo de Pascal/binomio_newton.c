@@ -45,6 +45,7 @@ double *generarPascal(unsigned long n) {
         return NULL;
     }
 
+    // Memoria dinámica solicitada en el documento
     coeficientes = malloc(cantidad * sizeof(*coeficientes));
     if (coeficientes == NULL) {
         return NULL;
@@ -75,7 +76,7 @@ void imprimirPolinomio(const double *coeficientes, unsigned long n) {
             printf(" + ");
         }
 
-        if (esConstante || coeficiente != 1.0L) {
+        if (esConstante || coeficiente != 1.0) {
             printf("%.0f", coeficiente);
         }
         if (!esConstante) {
@@ -103,17 +104,18 @@ double evaluarPolinomio(const double *coeficientes, unsigned long n, double x) {
         if (exponente == 0) {
             printf("Termino constante: %.0f", termino);
         } else {
-            printf("%.0f * (%.6f)^%lld = %.6f",
+            // Ajustado a %.3f para mostrar 3 decimales
+            printf("%.0f(%.3f)^%lld = %.3f",
                    coeficientes[n - (unsigned long)exponente],
                    x,
                    exponente,
                    termino);
         }
         resultado += termino;
-        printf("  -> acumulado: %.6f\n", resultado);
+        printf("  -> acumulado: %.3f\n", resultado);
     }
 
-    printf("Resultado final: %.6f\n", resultado);
+    printf("Resultado final: %.3f\n", resultado);
     return resultado;
 }
 
@@ -141,7 +143,11 @@ int main(void) {
     double *coeficientes;
     double tiempoPromedio;
 
+    // Separador visual para ignorar la ruta de la terminal
+    printf("\n=================================================\n");
     printf("Calculo del polinomio (x + 1)^n\n");
+    printf("=================================================\n");
+    
     printf("Ingrese n (entero no negativo): ");
     if (scanf("%63s", entradaN) != 1 || !leerEnteroNoNegativo(entradaN, &n)) {
         fprintf(stderr, "Error: n debe ser un entero no negativo.\n");
@@ -163,10 +169,14 @@ int main(void) {
     printf("\nPolinomio generado:\n");
     imprimirPolinomio(coeficientes, n);
     evaluarPolinomio(coeficientes, n, x);
-    free(coeficientes);
+    free(coeficientes); // Liberando la memoria dinámica
 
     tiempoPromedio = medirGeneracion(100, 100000);
-    printf("\nRendimiento C (generacion de n=100, promedio de 100000 ejecuciones): %.6f ms\n",
-           tiempoPromedio);
+    
+    
+    printf("\nRendimiento C (generacion de n=100, promedio de 100000 ejecuciones): %.6f ms\n", tiempoPromedio);
+    
+    // Salto de línea final solicitado
+    printf("\n");
     return EXIT_SUCCESS;
 }

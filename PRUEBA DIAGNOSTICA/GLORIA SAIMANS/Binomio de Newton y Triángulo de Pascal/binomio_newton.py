@@ -35,14 +35,15 @@ def evaluar_polinomio(coeficientes: list[int], n: int, x: float) -> float:
         coeficiente = coeficientes[n - exponente]
         termino = coeficiente * (x**exponente)
         if exponente == 0:
-            print(f"Término constante: {coeficiente} -> acumulado: {resultado + termino:.6f}")
+            print(f"Término constante: {coeficiente} -> acumulado: {resultado + termino:.3f}")
         else:
+           
             print(
-                f"{coeficiente} * ({x:.6f})^{exponente} = "
-                f"{termino:.6f} -> acumulado: {resultado + termino:.6f}"
+                f"{coeficiente}({x:.3f})^{exponente} = "
+                f"{termino:.3f} -> acumulado: {resultado + termino:.3f}"
             )
         resultado += termino
-    print(f"Resultado final: {resultado:.6f}")
+    print(f"Resultado final: {resultado:.3f}")
     return resultado
 
 
@@ -67,9 +68,11 @@ def main() -> None:
     print("\nPolinomio generado:")
     imprimir_polinomio(coeficientes, n)
     evaluar_polinomio(coeficientes, n, x)
+    
+  
     print(
         "\nRendimiento Python (generación de n=100, promedio de 100000 ejecuciones): "
-        f"{medir_generacion():.6f} ms"
+        f"{medir_generacion():.6f} ms \n"
     )
 
 
