@@ -1,4 +1,5 @@
 {
     "code-runner.runInTerminal": true,
-    "code-runner.fileDirectoryAsCwd": true
+    "code-runner.fileDirectoryAsCwd": true,
+    "explorer.compactFolders": false
 }
