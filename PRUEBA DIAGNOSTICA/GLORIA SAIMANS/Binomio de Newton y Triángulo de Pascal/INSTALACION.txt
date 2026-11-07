@@ -1,0 +1,18 @@
+Comandos de ejecucion con GCC y Python
+
+GCC:
+
+1. Abrir una terminal dentro de esta carpeta.
+2. Compilar:
+
+   gcc binomio_newton.c -o binomio_newton
+
+3. Ejecutar en Windows:
+
+   .\binomio_newton.exe
+
+Python:
+
+1. Ejecutar:
+
+   python binomio_newton.py

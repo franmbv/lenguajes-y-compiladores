@@ -1,0 +1,10 @@
+Comandos de compilacion y ejecucion con el JDK
+
+1. Abrir una terminal dentro de esta carpeta.
+2. Compilar:
+
+   javac MovimientoDeCaballo.java
+
+3. Ejecutar:
+
+   java MovimientoDeCaballo

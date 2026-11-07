@@ -2,6 +2,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "MovimientoDeCaballo",
+            "request": "launch",
+            "mainClass": "MovimientoDeCaballo",
+            "projectName": "lenguajes-y-compiladores_bc3916d3"
+        },
+        {
             "name": "Depurar C activo",
             "type": "cppdbg",
             "request": "launch",

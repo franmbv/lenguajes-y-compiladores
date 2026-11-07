@@ -1,0 +1,10 @@
+Comandos de compilacion con GCC
+
+1. Abrir una terminal dentro de esta carpeta.
+2. Compilar:
+
+   gcc traductor_lexico.c -o traductor_lexico
+
+3. Ejecutar en Windows:
+
+   .\traductor_lexico.exe codigo_fuente.c
