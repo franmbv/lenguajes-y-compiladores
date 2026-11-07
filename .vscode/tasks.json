@@ -1,37 +1,109 @@
 {
+    "version": "2.0.0",
     "tasks": [
         {
             "type": "cppbuild",
-            "label": "C: gcc.exe compilar archivo activo",
-            "command": "C:\\mingw64\\bin\\gcc.exe",
+            "label": "C: compilar archivo activo",
+            "command": "gcc",
             "args": [
-                "-fdiagnostics-color=always",
                 "-std=c17",
                 "-Wall",
                 "-Wextra",
                 "-pedantic",
                 "-g",
                 "${file}",
+                "-lm",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "${fileDirname}/${fileBasenameNoExtension}"
             ],
+            "windows": {
+                "args": [
+                    "-std=c17",
+                    "-Wall",
+                    "-Wextra",
+                    "-pedantic",
+                    "-g",
+                    "${file}",
+                    "-lm",
+                    "-o",
+                    "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                ]
+            },
             "options": {
                 "cwd": "${fileDirname}"
             },
             "problemMatcher": [
                 "$gcc"
             ],
+            "detail": "Requiere gcc en PATH. Enlaza libm para sistemas que la necesitan.",
             "group": {
                 "kind": "build",
                 "isDefault": true
-            },
-            "detail": "Tarea generada por el depurador."
+            }
         },
         {
-            "label": "C: ejecutar archivo activo (sin depuración)",
+            "type": "cppbuild",
+            "label": "C++: compilar archivo activo",
+            "command": "g++",
+            "args": [
+                "-std=c++17",
+                "-Wall",
+                "-Wextra",
+                "-pedantic",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "windows": {
+                "args": [
+                    "-std=c++17",
+                    "-Wall",
+                    "-Wextra",
+                    "-pedantic",
+                    "-g",
+                    "${file}",
+                    "-o",
+                    "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                ]
+            },
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Requiere g++ en PATH.",
+            "group": "build"
+        },
+        {
+            "label": "C: ejecutar archivo activo",
             "type": "process",
-            "command": "${fileDirname}\\${fileBasenameNoExtension}.exe",
-            "dependsOn": "C: gcc.exe compilar archivo activo",
+            "command": "${fileDirname}/${fileBasenameNoExtension}",
+            "windows": {
+                "command": "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            },
+            "dependsOn": "C: compilar archivo activo",
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "dedicated",
+                "clear": false
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "C++: ejecutar archivo activo",
+            "type": "process",
+            "command": "${fileDirname}/${fileBasenameNoExtension}",
+            "windows": {
+                "command": "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            },
+            "dependsOn": "C++: compilar archivo activo",
             "options": {
                 "cwd": "${fileDirname}"
             },
@@ -44,6 +116,5 @@
             },
             "problemMatcher": []
         }
-    ],
-    "version": "2.0.0"
+    ]
 }
