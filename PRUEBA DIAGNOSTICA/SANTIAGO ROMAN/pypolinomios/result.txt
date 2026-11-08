@@ -1,0 +1,13 @@
+=== REPORTE DE PRUEBA DIAGNOSTICA - EJERCICIO 2 (POLINOMIOS) ===
+Grado del polinomio (n): 4
+Valor evaluado (x): 2.0
+
+Coeficientes generados para (x+1)^4:
+[1, 4, 6, 4, 1]
+
+--- Evaluando f(x) = (x+1)^4 para x = 2.0 ---
+(1 * 2.0^4) + (4 * 2.0^3) + (6 * 2.0^2) + (4 * 2.0^1) + (1 * 2.0^0)
+Resultado final f(2.0) = 81.0
+
+Tiempo necesario para generar n=100: 0.995606 ms
+Tiempo de generacion individual (4 elementos): 0.031840 ms

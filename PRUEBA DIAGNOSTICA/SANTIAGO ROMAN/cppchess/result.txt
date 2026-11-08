@@ -1,0 +1,4 @@
+=== REPORTE DE PRUEBA DIAGNOSTICA (C++) ===
+ Ejercicio 1: Movimiento del Caballo de Ajedrez
+ Estado: Movimiento INCORRECTO (Fallo detectado durante las pruebas)
+ Tiempo de ejecucion (10 iteraciones): 0.229779 ms

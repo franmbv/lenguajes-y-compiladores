@@ -1,0 +1,7 @@
+=== REPORTE DE PRUEBA DIAGNOSTICA - EJERCICIO 3 ===
+Archivo analizado: test.c
+Verificacion y traduccion de palabras reservadas de C cargadas en memoria:
+
+Palabra C: int        ==> Traduccion: entero
+Palabra C: return     ==> Traduccion: retornar
+Palabra C: include    ==> Traduccion: incluir
