@@ -1,0 +1,11 @@
+================================================================================
+REPORTE DE TIEMPO DE EJECUCIÓN - EJERCICIO 1: VERIFICADOR DEL CABALLO
+Lenguajes y Compiladores - Prueba Diagnóstica
+Estudiante: Franner Bermúdez
+================================================================================
+
+- Estado de la secuencia de 500 : movimiento CORRECTO.
+- Tiempo total de verificar 10 veces la secuencia de 500 (5.000 movimientos):
+    * Tiempo total    : 3.9049 ms
+    * Promedio por secuencia de 500 : 0.3905 ms
+================================================================================

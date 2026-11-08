@@ -1,0 +1,31 @@
+================================================================================
+REPORTE DE BENCHMARK - EJERCICIO 2: POLINOMIOS CON TRIÁNGULO DE PASCAL
+Lenguajes y Compiladores - Prueba Diagnóstica
+Estudiante: Franner Bermúdez
+================================================================================
+- Grado de Prueba    : n = 100 (Triángulo de 101 filas, 5,151 coeficientes evaluados)
+================================================================================
+
+1. MEDICIÓN DE RENDIMIENTO EN PYTHON (pascal.py):
+--------------------------------------------------------------------------------
+- Asignación de memoria              : Listas dinámicas en tiempo de ejecución
+- Tiempo de ejecución (1 corrida)    : 1.4251 ms (1,425,100 ns)
+- Tiempo de ejecución (promedio 1000 it): 1.6491 ms (1,649,149 ns)
+================================================================================
+
+2. MEDICIÓN DE RENDIMIENTO EN C (pascal.c):
+--------------------------------------------------------------------------------
+- Asignación de memoria              : Punteros dobles (u128**) con malloc / free
+- Tipo de dato numérico              : unsigned __int128 (16 bytes, exactitud hasta 3.4e38)
+- Tiempo de ejecución (1 corrida)    : 0.1294 ms
+- Tiempo de ejecución (promedio 10000 it): 0.494838 ms
+================================================================================
+
+3. TABLA COMPARATIVA DE RENDIMIENTO (PYTHON VS C):
+--------------------------------------------------------------------------------
+Lenguaje        | Estructura de Memoria       | Tiempo n=100 (Promedio) | Factor
+----------------+-----------------------------+-------------------------+-------
+Python 3.13     | Listas dinámicas            |        1.6491 ms      | 1.00x (Base)
+C (GCC -O2)     | Punteros u128** (malloc)    |        0.4948 ms      | C es 3.33x más rápido
+
+================================================================================

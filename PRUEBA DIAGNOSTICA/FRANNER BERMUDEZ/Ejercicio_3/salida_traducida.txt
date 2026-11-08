@@ -1,0 +1,75 @@
+/*
+ * ejemplo.c - Programa de prueba para el Ejercicio 3
+ * Contiene palabras reservadas de C, ademas de comentarios y cadenas
+ * que mencionan palabras reservadas y que NO deben traducirse.
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+/* Comentario de bloque: if, while, return y for aqui no se traducen. */
+tipo_definido estructura Nodo {
+    entero valor;
+    estructura Nodo *siguiente;
+} Nodo;
+
+enumeracion Color {
+    ROJO,
+    VERDE
+};
+
+union Dato {
+    entero valor_entero;
+    flotante valor_flotante;
+};
+
+estatico entero sumar(constante Nodo *nodo) {
+    entero total = 0;
+    mientras (nodo != NULL) {
+        total += nodo->valor;
+        nodo = nodo->siguiente;
+    }
+    retornar total;
+}
+
+entero main(vacio) {
+    // Comentario de linea: int if else for while return no se traducen.
+    constante caracter *mensaje = "if while for return int tampoco se traducen";
+    sin_signo largo cantidad = 3;
+    Nodo *cabeza = NULL;
+    volatil entero bandera = 0;
+    registro entero auxiliar = 0;
+
+    para (sin_signo largo i = 0; i < cantidad; i++) {
+        Nodo *nuevo = (Nodo *)malloc(tamano_de(Nodo));
+        si (nuevo == NULL) {
+            retornar 1;
+        } sino {
+            nuevo->valor = (entero)i;
+            nuevo->siguiente = cabeza;
+            cabeza = nuevo;
+        }
+    }
+
+    printf("%s\n", mensaje);
+    printf("Suma: %d\n", sumar(cabeza));
+
+    cambiar (cantidad) {
+        caso 3:
+            bandera = 1;
+            romper;
+        predeterminado:
+            ir_a fin;
+    }
+
+    mientras (cabeza != NULL) {
+        Nodo *temporal = cabeza;
+        cabeza = cabeza->siguiente;
+        free(temporal);
+    }
+
+fin:
+    auxiliar = bandera;
+    (vacio)auxiliar;
+    retornar 0;
+}
