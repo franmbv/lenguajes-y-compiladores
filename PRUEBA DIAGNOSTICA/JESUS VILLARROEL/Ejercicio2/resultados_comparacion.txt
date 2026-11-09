@@ -1,0 +1,226 @@
+Comparacion de tiempos de ejecucion: C y Python
+n (N) = 10
+x (X) = 10
+Repeticiones medidas por lenguaje: 100
+Ejecuciones de calentamiento descartadas por lenguaje: 10
+Los tiempos son los medidos internamente por cada programa; no incluyen el arranque del proceso ni el registro posterior.
+
+Resumen C:
+  Mediana: 0.000076850 segundos
+  Promedio: 0.000091377 segundos
+  Minimo: 0.000067100 segundos
+  Maximo: 0.000231500 segundos
+
+Resumen Python:
+  Mediana: 0.000185950 segundos
+  Promedio: 0.000206740 segundos
+  Minimo: 0.000142400 segundos
+  Maximo: 0.000453900 segundos
+
+
+  Mediciones individuales (C):
+    repeticion 1: 0.000082700 segundos
+    repeticion 2: 0.000079200 segundos
+    repeticion 3: 0.000074300 segundos
+    repeticion 4: 0.000108800 segundos
+    repeticion 5: 0.000081000 segundos
+    repeticion 6: 0.000169600 segundos
+    repeticion 7: 0.000119600 segundos
+    repeticion 8: 0.000126400 segundos
+    repeticion 9: 0.000116100 segundos
+    repeticion 10: 0.000080600 segundos
+    repeticion 11: 0.000071800 segundos
+    repeticion 12: 0.000071800 segundos
+    repeticion 13: 0.000082300 segundos
+    repeticion 14: 0.000216000 segundos
+    repeticion 15: 0.000081600 segundos
+    repeticion 16: 0.000123700 segundos
+    repeticion 17: 0.000167200 segundos
+    repeticion 18: 0.000092400 segundos
+    repeticion 19: 0.000075300 segundos
+    repeticion 20: 0.000188500 segundos
+    repeticion 21: 0.000138900 segundos
+    repeticion 22: 0.000074200 segundos
+    repeticion 23: 0.000074300 segundos
+    repeticion 24: 0.000077000 segundos
+    repeticion 25: 0.000078300 segundos
+    repeticion 26: 0.000068000 segundos
+    repeticion 27: 0.000074400 segundos
+    repeticion 28: 0.000108700 segundos
+    repeticion 29: 0.000076700 segundos
+    repeticion 30: 0.000073200 segundos
+    repeticion 31: 0.000068000 segundos
+    repeticion 32: 0.000069000 segundos
+    repeticion 33: 0.000067400 segundos
+    repeticion 34: 0.000067600 segundos
+    repeticion 35: 0.000068600 segundos
+    repeticion 36: 0.000067200 segundos
+    repeticion 37: 0.000068200 segundos
+    repeticion 38: 0.000115200 segundos
+    repeticion 39: 0.000125900 segundos
+    repeticion 40: 0.000067700 segundos
+    repeticion 41: 0.000231500 segundos
+    repeticion 42: 0.000102900 segundos
+    repeticion 43: 0.000068200 segundos
+    repeticion 44: 0.000070100 segundos
+    repeticion 45: 0.000109300 segundos
+    repeticion 46: 0.000076600 segundos
+    repeticion 47: 0.000068400 segundos
+    repeticion 48: 0.000073800 segundos
+    repeticion 49: 0.000069400 segundos
+    repeticion 50: 0.000089200 segundos
+    repeticion 51: 0.000087700 segundos
+    repeticion 52: 0.000073700 segundos
+    repeticion 53: 0.000082900 segundos
+    repeticion 54: 0.000068200 segundos
+    repeticion 55: 0.000067900 segundos
+    repeticion 56: 0.000068100 segundos
+    repeticion 57: 0.000067200 segundos
+    repeticion 58: 0.000075600 segundos
+    repeticion 59: 0.000076800 segundos
+    repeticion 60: 0.000108500 segundos
+    repeticion 61: 0.000080300 segundos
+    repeticion 62: 0.000137800 segundos
+    repeticion 63: 0.000114500 segundos
+    repeticion 64: 0.000070100 segundos
+    repeticion 65: 0.000105100 segundos
+    repeticion 66: 0.000109700 segundos
+    repeticion 67: 0.000110900 segundos
+    repeticion 68: 0.000068000 segundos
+    repeticion 69: 0.000068500 segundos
+    repeticion 70: 0.000081400 segundos
+    repeticion 71: 0.000170900 segundos
+    repeticion 72: 0.000112900 segundos
+    repeticion 73: 0.000135500 segundos
+    repeticion 74: 0.000075400 segundos
+    repeticion 75: 0.000076800 segundos
+    repeticion 76: 0.000092800 segundos
+    repeticion 77: 0.000100500 segundos
+    repeticion 78: 0.000074600 segundos
+    repeticion 79: 0.000073600 segundos
+    repeticion 80: 0.000091200 segundos
+    repeticion 81: 0.000077600 segundos
+    repeticion 82: 0.000112400 segundos
+    repeticion 83: 0.000076900 segundos
+    repeticion 84: 0.000104200 segundos
+    repeticion 85: 0.000069000 segundos
+    repeticion 86: 0.000068600 segundos
+    repeticion 87: 0.000068200 segundos
+    repeticion 88: 0.000068200 segundos
+    repeticion 89: 0.000067100 segundos
+    repeticion 90: 0.000137600 segundos
+    repeticion 91: 0.000068800 segundos
+    repeticion 92: 0.000067600 segundos
+    repeticion 93: 0.000088300 segundos
+    repeticion 94: 0.000092600 segundos
+    repeticion 95: 0.000076000 segundos
+    repeticion 96: 0.000068100 segundos
+    repeticion 97: 0.000096700 segundos
+    repeticion 98: 0.000068600 segundos
+    repeticion 99: 0.000067700 segundos
+    repeticion 100: 0.000069600 segundos
+
+
+
+  Mediciones individuales (Python):
+    repeticion 1: 0.000153700 segundos
+    repeticion 2: 0.000149000 segundos
+    repeticion 3: 0.000149800 segundos
+    repeticion 4: 0.000307200 segundos
+    repeticion 5: 0.000202300 segundos
+    repeticion 6: 0.000291800 segundos
+    repeticion 7: 0.000173600 segundos
+    repeticion 8: 0.000169600 segundos
+    repeticion 9: 0.000194400 segundos
+    repeticion 10: 0.000154100 segundos
+    repeticion 11: 0.000146600 segundos
+    repeticion 12: 0.000225300 segundos
+    repeticion 13: 0.000223600 segundos
+    repeticion 14: 0.000168400 segundos
+    repeticion 15: 0.000170800 segundos
+    repeticion 16: 0.000195600 segundos
+    repeticion 17: 0.000180400 segundos
+    repeticion 18: 0.000174000 segundos
+    repeticion 19: 0.000189200 segundos
+    repeticion 20: 0.000363000 segundos
+    repeticion 21: 0.000179300 segundos
+    repeticion 22: 0.000165000 segundos
+    repeticion 23: 0.000382800 segundos
+    repeticion 24: 0.000176200 segundos
+    repeticion 25: 0.000168800 segundos
+    repeticion 26: 0.000179900 segundos
+    repeticion 27: 0.000171000 segundos
+    repeticion 28: 0.000163900 segundos
+    repeticion 29: 0.000155800 segundos
+    repeticion 30: 0.000195000 segundos
+    repeticion 31: 0.000203200 segundos
+    repeticion 32: 0.000150700 segundos
+    repeticion 33: 0.000329100 segundos
+    repeticion 34: 0.000227000 segundos
+    repeticion 35: 0.000240300 segundos
+    repeticion 36: 0.000240000 segundos
+    repeticion 37: 0.000149900 segundos
+    repeticion 38: 0.000267600 segundos
+    repeticion 39: 0.000260100 segundos
+    repeticion 40: 0.000236700 segundos
+    repeticion 41: 0.000288100 segundos
+    repeticion 42: 0.000149800 segundos
+    repeticion 43: 0.000152000 segundos
+    repeticion 44: 0.000256900 segundos
+    repeticion 45: 0.000307900 segundos
+    repeticion 46: 0.000152700 segundos
+    repeticion 47: 0.000149900 segundos
+    repeticion 48: 0.000157300 segundos
+    repeticion 49: 0.000153100 segundos
+    repeticion 50: 0.000276200 segundos
+    repeticion 51: 0.000188000 segundos
+    repeticion 52: 0.000164300 segundos
+    repeticion 53: 0.000194900 segundos
+    repeticion 54: 0.000192400 segundos
+    repeticion 55: 0.000147400 segundos
+    repeticion 56: 0.000146100 segundos
+    repeticion 57: 0.000397400 segundos
+    repeticion 58: 0.000164000 segundos
+    repeticion 59: 0.000161500 segundos
+    repeticion 60: 0.000145900 segundos
+    repeticion 61: 0.000187900 segundos
+    repeticion 62: 0.000453900 segundos
+    repeticion 63: 0.000159200 segundos
+    repeticion 64: 0.000143200 segundos
+    repeticion 65: 0.000195900 segundos
+    repeticion 66: 0.000372200 segundos
+    repeticion 67: 0.000185700 segundos
+    repeticion 68: 0.000266500 segundos
+    repeticion 69: 0.000189400 segundos
+    repeticion 70: 0.000383500 segundos
+    repeticion 71: 0.000175800 segundos
+    repeticion 72: 0.000231000 segundos
+    repeticion 73: 0.000211500 segundos
+    repeticion 74: 0.000371800 segundos
+    repeticion 75: 0.000187300 segundos
+    repeticion 76: 0.000163400 segundos
+    repeticion 77: 0.000222700 segundos
+    repeticion 78: 0.000182900 segundos
+    repeticion 79: 0.000259900 segundos
+    repeticion 80: 0.000218100 segundos
+    repeticion 81: 0.000179600 segundos
+    repeticion 82: 0.000186800 segundos
+    repeticion 83: 0.000185700 segundos
+    repeticion 84: 0.000164500 segundos
+    repeticion 85: 0.000265800 segundos
+    repeticion 86: 0.000144300 segundos
+    repeticion 87: 0.000185700 segundos
+    repeticion 88: 0.000182100 segundos
+    repeticion 89: 0.000146600 segundos
+    repeticion 90: 0.000301600 segundos
+    repeticion 91: 0.000195300 segundos
+    repeticion 92: 0.000146700 segundos
+    repeticion 93: 0.000220400 segundos
+    repeticion 94: 0.000189100 segundos
+    repeticion 95: 0.000187400 segundos
+    repeticion 96: 0.000186200 segundos
+    repeticion 97: 0.000185000 segundos
+    repeticion 98: 0.000192700 segundos
+    repeticion 99: 0.000142400 segundos
+    repeticion 100: 0.000153800 segundos
+

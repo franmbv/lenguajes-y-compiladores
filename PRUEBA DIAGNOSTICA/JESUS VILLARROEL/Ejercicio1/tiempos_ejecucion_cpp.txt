@@ -1,0 +1,13 @@
+n=500; tiempo_ms=0.118200; resultado=movimiento CORRECTO.
+n=500; tiempo_ms=0.155500; resultado=movimiento CORRECTO.
+n=500; tiempo_ms=0.306900; resultado=movimiento CORRECTO.
+n=500; tiempo_ms=0.194700; resultado=movimiento CORRECTO.
+n=500; tiempo_ms=0.168100; resultado=movimiento CORRECTO.
+n=500; tiempo_ms=0.159000; resultado=movimiento CORRECTO.
+n=500; tiempo_ms=0.101900; resultado=movimiento CORRECTO.
+n=500; tiempo_ms=0.131300; resultado=movimiento CORRECTO.
+n=500; tiempo_ms=0.267800; resultado=movimiento CORRECTO.
+n=500; tiempo_ms=0.930000; resultado=movimiento CORRECTO.
+n=200; tiempo_ms=0.031900; resultado=Error: la cadena C contiene mas movimientos de los indicados.
+n=500; tiempo_ms=0.101500; resultado=movimiento INCORRECTO falla letra Q no pertenece a un caballo.
+n=500; tiempo_ms=0.100400; resultado=movimiento INCORRECTO falla en el movimiento 500.
